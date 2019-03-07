@@ -4,7 +4,7 @@
 #
 Name     : R-randomNames
 Version  : 1.0.0.0
-Release  : 2
+Release  : 3
 URL      : https://cran.r-project.org/src/contrib/randomNames_1.0-0.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/randomNames_1.0-0.0.tar.gz
 Summary  : Function for Generating Random Names and a Dataset
