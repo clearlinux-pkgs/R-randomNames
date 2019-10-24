@@ -4,7 +4,7 @@
 #
 Name     : R-randomNames
 Version  : 1.4.0.0
-Release  : 12
+Release  : 13
 URL      : https://cran.r-project.org/src/contrib/randomNames_1.4-0.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/randomNames_1.4-0.0.tar.gz
 Summary  : Generate Random Given and Surnames
@@ -17,6 +17,7 @@ BuildRequires : R-crayon
 BuildRequires : R-data.table
 BuildRequires : R-toOrdinal
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 No detailed description available
@@ -29,10 +30,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1569292955
+export SOURCE_DATE_EPOCH=1571882544
 
 %install
-export SOURCE_DATE_EPOCH=1569292955
+export SOURCE_DATE_EPOCH=1571882544
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
