@@ -4,7 +4,7 @@
 #
 Name     : R-randomNames
 Version  : 1.4.0.0
-Release  : 16
+Release  : 17
 URL      : https://cran.r-project.org/src/contrib/randomNames_1.4-0.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/randomNames_1.4-0.0.tar.gz
 Summary  : Generate Random Given and Surnames
@@ -17,28 +17,28 @@ BuildRequires : R-crayon
 BuildRequires : R-data.table
 BuildRequires : R-toOrdinal
 BuildRequires : buildreq-R
-BuildRequires : util-linux
 
 %description
 No detailed description available
 
 %prep
 %setup -q -c -n randomNames
+cd %{_builddir}/randomNames
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571882544
+export SOURCE_DATE_EPOCH=1589757882
 
 %install
-export SOURCE_DATE_EPOCH=1571882544
+export SOURCE_DATE_EPOCH=1589757882
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
