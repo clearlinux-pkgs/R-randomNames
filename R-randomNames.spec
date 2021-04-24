@@ -4,7 +4,7 @@
 #
 Name     : R-randomNames
 Version  : 1.5.0.0
-Release  : 21
+Release  : 22
 URL      : https://cran.r-project.org/src/contrib/randomNames_1.5-0.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/randomNames_1.5-0.0.tar.gz
 Summary  : Generate Random Given and Surnames
